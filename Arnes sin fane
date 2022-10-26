@@ -1,2 +1,11 @@
-print("hei")
-veldig braa
+#9.d
+import datetime as dt
+
+class Avtale:
+    def __init__(avtale, sted, starttidspunkt, varighet):
+        avtale.sted = sted
+        avtale.starttidspunkt = starttidspunkt
+        starttidspunkt = dt.datetime.now()
+        avtale.varighet = int(varighet)
+        
+print(dt.datetime.now())
