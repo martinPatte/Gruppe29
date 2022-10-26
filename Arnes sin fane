@@ -3,6 +3,7 @@ import datetime as dt
 
 class Avtale:
     def __init__(self, avtale, sted, starttidspunkt, varighet):
+        self.avtale = avtale
         self.sted = sted
         self.starttidspunkt = starttidspunkt
         self.starttidspunkt = starttidspunkt
@@ -11,7 +12,8 @@ class Avtale:
         
 #9.e
     def __str__(self):
-        return f"Avtale: {self.sted}, {self.starttidspunkt}, {self.varighet}"
+        return f"Avtalen er: {self.avtale}, {self.sted}, {self.starttidspunkt}, {self.varighet}"
 
-avtale = Avtale("møte", "uis", dt.datetime.now(), 30)
-print(avtale)
+avtalen = Avtale("et møte", "uis", dt.datetime.now(), 30)
+print(avtalen)
+
