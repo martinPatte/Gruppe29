@@ -2,10 +2,16 @@
 import datetime as dt
 
 class Avtale:
-    def __init__(avtale, sted, starttidspunkt, varighet):
-        avtale.sted = sted
-        avtale.starttidspunkt = starttidspunkt
-        starttidspunkt = dt.datetime.now()
-        avtale.varighet = int(varighet)
+    def __init__(self, avtale, sted, starttidspunkt, varighet):
+        self.sted = sted
+        self.starttidspunkt = starttidspunkt
+        self.starttidspunkt = starttidspunkt
+        self.varighet = int(varighet)
+    
         
-print(dt.datetime.now())
+#9.e
+    def __str__(self):
+        return f"Avtale: {self.sted}, {self.starttidspunkt}, {self.varighet}"
+
+avtale = Avtale("møte", "uis", dt.datetime.now(), 30)
+print(avtale)
