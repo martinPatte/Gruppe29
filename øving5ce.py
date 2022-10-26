@@ -24,3 +24,5 @@ def maksverdi():
         else: x=a
     return x
 print((f"maksimalverdien til målingen var {maksverdi()}"))
+
+Jevla fitteoppgave
