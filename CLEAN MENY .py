@@ -44,3 +44,10 @@ print("ferdig")
 # Alt 3 Skrive inn en ny avtale ( f )
 # Alt 4 Skrive ut alle avtalene ( )
 # Alt 5 Avsluttet scriptet ( )
+
+ print("Alt 4 er valgt")
+        def print_avtaler():
+            fil= open("demofile2.txt","r")
+            linje=fil.readline
+            for linje in fil:
+                print(linje)
