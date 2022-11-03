@@ -15,11 +15,11 @@ class Avtale:
         self.starttidspunkt = starttidspunkt
         self.varighet = varighet
         
-        
+  # 9.E      
     def __str__(self):
         return f"tittel:{self.tittel}; sted: {self.sted}; tidspunkt: {self.starttidspunkt}; varighet: {self.varighet}"
     
-
+# 9.F
 def ny_avtale():
     try:   
         tittel = input ("Tittel: ")
@@ -35,11 +35,12 @@ def ny_avtale():
     except ValueError:
         print("avtalelengden må skrives i tall")
         
-        
+# 9.G
 def indeksering(avtaleliste, overskrift = "overskrift"):
     #janei=input("ønsker du å legge til en avtale?: ")
     for index, avtale in enumerate(avtaleliste):
         print(index,avtale)
+
         
 def les_avtale(avtale_liste):
     open("fila.txt", 'r') as filen:
