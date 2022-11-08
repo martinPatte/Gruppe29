@@ -1,0 +1,19 @@
+#10.g og h
+
+#adresse = gateadresse, postnummer, poststed
+gateadresse = input("skriv inn gateadressen: ")
+postnummer = input("skriv inn postnummeret: ")
+poststed = input("skriv inn poststedet: ")
+adresse = f" {gateadresse} {postnummer} {poststed}"
+class Sted:
+    def __init__(self, ID, navn, adresse):
+        self.ID = ID
+        self.navn = navn
+        self.adresse = adresse
+    
+    def __str__(self):
+        return f"id: {self.ID}, navn: {self.navn}, adresse: {self.adresse}"
+
+def kategorisering(ID, navn, adresse):
+    print(Sted(ID, navn, adresse))
+kategorisering(int(input("skriv inn id: ")),(input("navn: ")), adresse)
