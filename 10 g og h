@@ -4,7 +4,7 @@
 gateadresse = input("skriv inn gateadressen: ")
 postnummer = input("skriv inn postnummeret: ")
 poststed = input("skriv inn poststedet: ")
-adresse = f" {gateadresse} {postnummer} {poststed}"
+
 class Sted:
     def __init__(self, ID, navn, adresse):
         self.ID = ID
