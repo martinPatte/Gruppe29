@@ -1,0 +1,14 @@
+#10.c
+class Kategori:
+    def __init__(self, ID, navn, prioritet=1):
+        self.ID = ID
+        self.navn = navn
+        self.prioritet = prioritet
+        
+    def __str__(self):
+        return f"id: {self.ID}, navn: {self.navn}, prioritet: {self.prioritet}"
+
+#10.d
+def kategorisering(ID, navn, prioritet):
+    print(Kategori(ID, navn, prioritet))
+kategorisering(int(input("skriv inn id: ")),input("navn: "),input("prioritet: "))
