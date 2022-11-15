@@ -1,0 +1,47 @@
+open("demofile2.txt", "a")
+from datetime import datetime as dt
+
+class avtale:
+     def __init__(self, tittel, sted, tidspunkt, lengde):
+         self.sted = sted
+         self.tidspunkt = tidspunkt
+         self.lengde=lengde
+         self.tittel= tittel
+
+     def __str__(self):
+        return f" tittel: {self.tittel}; sted: {self.sted}; tidspunkt: {self.tidspunkt}; varighet: {self.lengde}"
+    
+class Kategori:
+    def __init__(self, ID, navn, prioritet=1):
+        self.ID = ID
+        self.navn = navn
+        self.prioritet = prioritet
+        
+    def __str__(self):
+        return f"id: {self.ID}, navn: {self.navn}, prioritet: {self.prioritet}"
+    
+class Sted:
+    def __init__(self, ID, navn, gateadresse, postnummer, poststed):
+        self.ID = ID
+        self.navn = navn
+        self.gateadresse = gateadresse
+        self.postnummer = postnummer
+        self.poststed = poststed
+    
+    def __str__(self):
+        return f"id: {self.ID}, navn: {self.navn}, adresse: {self.gateadresse} {self.postnummer} {self.poststed}"
+
+def kategorisering(ID, navn, gateadresse, postnummer, poststed):
+   print(Sted(ID, navn, gateadresse, postnummer, poststed))
+while True:
+    try:
+        ID = int(input("Skriv inn id: "))
+        break
+    except ValueError:
+        print ("Ugyldig ID. Prøv igjen med heltall.")
+navn = input("Navn: ")
+gateadresse = input("Skriv inn gateadresse: ")
+postnummer =  input("skriv inn postnummer: ")
+poststed = input("skriv inn poststed: ")
+kategorisering(ID, navn, gateadresse, postnummer, poststed)
+        
