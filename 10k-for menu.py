@@ -86,3 +86,4 @@ def ny_avtale_med_kategori():
           
     kategori_valg()
     ny_avtale_fil()
+ny_avtale_med_kategori()
